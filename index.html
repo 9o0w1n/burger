@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍔햄버거 메뉴🍔</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🍔오늘의 햄버거 메뉴는?!🍔</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "기네스 와퍼",
+                "더블 쿼터파운드 치즈 버거",
+                "화이트 갈릭 버거",
+                "휠렛 버거",
+                "몬스터X 와퍼",
+                "기본 와퍼",
+                "싸이 버거",
+                "롱치킨 버거",
+                "모짜렐라 인 더 버거",
+                "핫 크리스피 버거",
+                "상하이 치킨 버거",
+                "징거 버거",
+                "타워 버거"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
